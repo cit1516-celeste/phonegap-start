@@ -6,7 +6,7 @@
         id        = "hk.edu.lfis.calculatrice"
         version   = "0.0.1">
 
-    <name>Hello World</name>
+    <name>Calculatrice</name>
 
     <description>
         Hello World sample application that responds to the deviceready event.
