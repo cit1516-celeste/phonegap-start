@@ -30,90 +30,94 @@
         <title>Calculator</title>
     </head>
     <body>
-        <div id="frame">
+        <form name="Calc">
+		<div id="frame">
 			<div id="screen">
-				<form>
-					<input type="text">
-				</form>
-			</div>
+			
+			<input type="text" name="Input">
+			
 			
 			<br>
 			
-			<div class="buttonl1">
-				<button>EXE</button>
-			</div>
-			<div class="buttonl1">
-				<button></button>
+			<div class="buttonl1" id="" >
+				<input type="button" value="" OnClick="">
 			</div>
 			<div class="buttonl1">
-				<button>DEL</button>
+				<input type="button" value="" OnClick="">
 			</div>
-			<div class="buttonl1">
-				<button>AC</button>
+			<div class="buttonl1" id="del">
+				<input type="button" value="" OnClick="">
 			</div>
-			
-			<br>
-			
-			<div class="buttonl2">
-				<button>7</button>
-			</div>
-			<div class="buttonl2">
-				<button>8</button>
-			</div>
-			<div class="buttonl2">
-				<button>9</button>
-			</div>
-			<div class="buttonl2">
-				<button>÷</button>
+			<div class="buttonl1" id="ac">
+				<input type="button" value="AC" OnClick="Calc.Input.value = ''">
 			</div>
 			
 			<br>
 			
-			<div class="buttonl3">
-				<button>4</button>
+			<div class="buttonl2" id="7">
+				<input type="button" value="7" OnClick="Calc.Input.value += '7'">
 			</div>
-			<div class="buttonl3">
-				<button>5</button>
+			<div class="buttonl2" id="8">
+				<input type="button" value="8" OnClick="Calc.Input.value += '8'">
 			</div>
-			<div class="buttonl3">
-				<button>6</button>
+			<div class="buttonl2" id="9">
+				<input type="button" value="9" OnClick="Calc.Input.value += '9'">
 			</div>
-			<div class="buttonl3">
-				<button>x</button>
-			</div>
-			
-			<br>
-			
-			<div class="buttonl4">
-				<button>1</button>
-			</div>
-			<div class="buttonl4">
-				<button>2</button>
-			</div>
-			<div class="buttonl4">
-				<button>3</button>
-			</div>
-			<div class="buttonl4">
-				<button>-</button>
+			<div class="buttonl2" id="/">
+				<input type="button" value="/" OnClick="Calc.Input.value += '/'">
 			</div>
 			
 			<br>
 			
-			<div class="buttonl5">
-				<button></button>
+			<div class="buttonl3" id="4">
+				<input type="button" value="4" OnClick="Calc.Input.value += '4'">
 			</div>
-			<div class="buttonl5">
-				<button>0</button>
+			<div class="buttonl3" id="5">
+				<input type="button" value="5" OnClick="Calc.Input.value += '5'">
 			</div>
-			<div class="buttonl5">
-				<button>.</button>
+			<div class="buttonl3" id="6">
+				<input type="button" value="6" OnClick="Calc.Input.value += '6'">
 			</div>
-			<div class="buttonl5">
-				<button>+</button>
+			<div class="buttonl3" id="*">
+				<input type="button" value="x" OnClick="Calc.Input.value += '*'">
+			</div>
+			
+			<br>
+			
+			<div class="buttonl4" id="1">
+				<input type="button" value="1" OnClick="Calc.Input.value += '1'">
+			</div>
+			<div class="buttonl4" id="2">
+				<input type="button" value="2" OnClick="Calc.Input.value += '2'">
+			</div>
+			<div class="buttonl4" id="3">
+				<input type="button" value="3" OnClick="Calc.Input.value += '3'">
+			</div>
+			<div class="buttonl4" id="-">
+				<input type="button" value="-" OnClick="Calc.Input.value += '-'">
+			</div>
+			
+			<br>
+			
+			<div class="buttonl5" id=".">
+				<input type="button" value="." OnClick="Calc.Input.value += '.'">
+			</div>
+			<div class="buttonl5" id="0">
+				<input type="button" value="0" OnClick="Calc.Input.value += '0'">
+			</div>
+			<div class="buttonl5" id="=">
+				<input type="button" value="=" OnClick="Calc.Input.value = eval(Calc.Input.value)">
+			</div>
+			<div class="buttonl5" id="+">
+				<input type="button" value="+" OnClick="Calc.Input.value += '+'">
+			</div>
+			
+			
 			</div>
 			
 			
 		</div>
+		</form>
 		
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
